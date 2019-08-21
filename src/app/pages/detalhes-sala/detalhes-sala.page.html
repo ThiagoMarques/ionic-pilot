@@ -1,0 +1,68 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start"> <ion-menu-button></ion-menu-button> </ion-buttons>
+    <ion-title text-center> Detalhe da Sala </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen>
+  <ion-grid>
+    <form onsubmit="agendarSala()">
+      <ion-list>
+        <ion-row>
+         <ion-col>
+           <ion-item>
+             <ion-label color="primary" class="label-input" position="stacked">Nome da Sala</ion-label>
+             <ion-input class="input" readonly type="text">{{Sala?.nome}}</ion-input>
+           </ion-item>
+         </ion-col>
+        </ion-row>
+        <ion-row>
+         <ion-col>
+           <ion-item>
+             <ion-label color="primary" class="label-input" position="stacked">Status</ion-label>
+             <ion-input class="input" readonly type="text">{{Sala?.status}}</ion-input>
+           </ion-item>
+         </ion-col>
+        </ion-row>
+        <ion-row>
+         <ion-col>
+           <ion-item>
+             <ion-label color="primary" class="label-input" position="stacked">Espaço</ion-label>
+             <ion-input class="input" readonly type="text">{{Sala?.espaco}}</ion-input>
+           </ion-item>
+         </ion-col>
+        </ion-row>
+        <ion-row>
+         <ion-col>
+           <ion-item>
+             <ion-label color="primary" class="label-input" position="stacked">Localização</ion-label>
+             <ion-input class="input" readonly type="text">{{Sala?.localizacao}}</ion-input>
+           </ion-item>
+         </ion-col>
+          </ion-row>
+        <ion-row>
+         <ion-col>
+           <ion-item>
+             <ion-label color="primary" class="label-input" position="stacked">Descrição</ion-label>
+             <ion-input class="input" style="margin-top: 5px;" readonly type="text">{{Sala?.descricao}}</ion-input>
+           </ion-item>
+         </ion-col>
+        </ion-row>
+      </ion-list>
+      <ion-row class="align-items-center">
+       <ion-col>
+         <ion-button strong size="small" type="submit">Agendar</ion-button>
+         <ion-button
+         strong
+         size="small"
+         (click)="editSala(Sala?.id)"
+         color="button-secondary"
+         type="button"
+         >Editar</ion-button>
+       </ion-col>
+      </ion-row>
+      
+    </form>
+  </ion-grid>
+</ion-content>

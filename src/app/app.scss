@@ -1,0 +1,85 @@
+/** Define as cores do menu **/
+.ion-color-dark-blue {
+  --ion-color-base: var(--ion-color-dark-blue);
+  --ion-color-base-rgb: var(--ion-color-dark-blue-rgb);
+  --ion-color-contrast: var(--ion-color-dark-blue-contrast);
+  --ion-color-contrast-rgb: var(--ion-color-dark-blue-contrast-rgb);
+  --ion-color-shade: var(--ion-color-dark-blue-shade);
+  --ion-color-tint: var(--ion-color-dark-blue-tint);
+}
+.ion-color-very-dark-blue {
+  --ion-color-base: var(--ion-color-very-dark-blue);
+  --ion-color-base-rgb: var(--ion-color-very-dark-blue-rgb);
+  --ion-color-contrast: var(--ion-color-very-dark-blue-contrast);
+  --ion-color-contrast-rgb: var(--ion-very-color-dark-blue-contrast-rgb);
+  --ion-color-shade: var(--ion-color-very-dark-blue-shade);
+  --ion-color-tint: var(--ion-color-very-dark-blue-tint);
+}
+.ion-color-button-secondary {
+  --ion-color-base: var(--ion-color-button-secondary);
+  --ion-color-base-rgb: var(--ion-color-button-secondary-rgb);
+  --ion-color-contrast: var(--ion-color-button-secondary-contrast);
+  --ion-color-contrast-rgb: var(--ion-button-secondary-contrast-rgb);
+  --ion-color-shade: var(--ion-color-button-secondary-shade);
+  --ion-color-tint: var(--ion-color-button-secondary-tint);
+}
+
+.menu-item {
+  --background: var(--ion-color-dark-blue);
+  --background-activated: var(--ion-color-dark-blue);
+  --background-hover: var(--ion-color-dark-blue);
+  --color: var(--ion-color-light);
+  --color-hover: var(--ion-color-gold);
+  --color-activated: var(--ion-color-gold);
+  --padding-bottom: 0px;
+}
+
+.menu-subitem {
+  --background: var(--ion-color-very-dark-blue);
+  --background-activated: var(--ion-color-dark-blue);
+  --background-hover: var(--ion-color-dark-blue);
+  --color: var(--ion-color-light);
+  --color-activated: var(--ion-color-gold);
+  --color-hover: var(--ion-color-gold);
+}
+.menu-icon {
+  margin-right: 10.5px;
+  width: 16px;
+  height: 12.73px;
+}
+/* LISTAS */
+.list-title {
+  font-size: 16px;
+  --ion-font-family: 'Open Sans', 'SemiBold' !important;
+  color: var(--ion-color-secondary);
+  font-weight: bold;
+}
+.list-text {
+  font-size: 18px;
+  color: var(--ion-color-secondary);
+}
+
+.icon {
+  color: var(--ion-color-light);
+}
+
+.item-input {
+  --padding-bottom: 0px;
+}
+.label-menu {
+  font-size: 13px;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  color: var(--ion-color-primary);
+}
+.label-input {
+ --ion-font-family: 'Open Sans', 'SemiBold' !important;
+  font-size: 16px !important;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+.input {
+ --ion-font-family: 'Open Sans', 'Regular' !important;
+  font-size: 18px;
+  --color: var(--ion-color-secondary);
+}

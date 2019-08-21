@@ -1,0 +1,96 @@
+{
+  "salas": [
+    {
+      "id": 1,
+      "nome": "Sala Diretoria",
+      "espaco": "1 Andar",
+      "localizacao": "Brasília - SEDE",
+      "descricao": "Reunião com grupo de pessoas da diretoria",
+      "status": "Indisponível",
+      "data": "01/01/2001"
+    },
+    {
+      "id": 2,
+      "nome": "Sala Diretoria",
+      "espaco": "1 Andar",
+      "localizacao": "Brasília - Regional",
+      "descricao": "Reunião com grupo de pessoas da diretoria",
+      "status": "Indisponível",
+      "data": "01/01/2001"
+    },
+    {
+      "id": 3,
+      "nome": "Sala Diretoria",
+      "espaco": "1 Andar",
+      "localizacao": "Brasília - Sede",
+      "descricao": "Reunião com grupo de pessoas da diretoria",
+      "status": "Indisponível",
+      "data": "01/01/2001"
+    },
+    {
+      "id": 4,
+      "nome": "Sala Reunião",
+      "espaco": "Terreo",
+      "localizacao": "Sao Paulo",
+      "descricao": "Reunião com grupo de pessoas de pessoas comuns",
+      "status": "Disponível",
+      "data": "01/01/2001"
+    },
+    {
+      "id": 5,
+      "nome": "Sala Reunião",
+      "espaco": "2 Andar",
+      "localizacao": "Brasília - Regional",
+      "descricao": "Reunião com grupo de pessoas comuns",
+      "status": "Disponível",
+      "data": "04/04/2004"
+    },
+    {
+      "id": 6,
+      "nome": "Sala Reunião",
+      "espaco": "Térreo",
+      "localizacao": "Brasília - Sede",
+      "descricao": "Reunião com grupo de pessoas comuns",
+      "status": "Disponível",
+      "data": "04/04/2004"
+    },
+    {
+      "id": 7,
+      "nome": "Sala Reunião",
+      "espaco": "Térreo",
+      "localizacao": "Brasília - Sede",
+      "descricao": "Reunião com grupo de pessoas comuns",
+      "status": "Disponível",
+      "data": "04/04/2004"
+    },
+    {
+      "id": 8,
+      "nome": "Sala Reunião",
+      "espaco": "Térreo",
+      "localizacao": "Rio de Janeiro",
+      "descricao": "Reunião com grupo de pessoas comuns",
+      "status": "Indisponível",
+      "data": "04/04/2004"
+    },
+    {
+      "id": 9,
+      "nome": "Sala Reunião",
+      "espaco": "Térreo",
+      "localizacao": "Brasília - Sede",
+      "descricao": "Reunião com grupo de pessoas comuns",
+      "status": "Disponível",
+      "data": "04/04/2004"
+    },
+    {
+      "nome": "Sala Teste",
+      "status": "Disponível",
+      "espaco": "Terreo",
+      "localizacao": "Brasília - Regional",
+      "descricao": "Desc Teste",
+      "id": 10
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

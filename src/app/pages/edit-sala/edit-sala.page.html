@@ -1,0 +1,83 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start"> <ion-menu-button></ion-menu-button> </ion-buttons>
+    <ion-title text-center> Editar a Sala </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen>
+  <ion-grid>
+    <form [formGroup]="formEdit">
+      <ion-list class="ion-no-padding">
+        <ion-row>
+         <ion-col>
+           <ion-item>
+             <ion-label color="primary" class="label-input" position="stacked">Nome da Sala</ion-label>
+             <ion-input class="input" name="nome" formControlName="nome" type="text">{{Sala?.nome}}</ion-input>
+           </ion-item>
+         </ion-col>
+        </ion-row>
+        <ion-row>
+         <ion-col>
+           <ion-item>
+             <ion-label color="primary" class="label-input" position="stacked">Status</ion-label>
+             <ion-select name="status" formControlName="status" [interfaceOptions]="customActionSheetOptions" interface="action-sheet" placeholder="Selecione">
+               <ion-select-option value="" selected></ion-select-option>
+               <ion-select-option value="Disponível">Disponível</ion-select-option>
+               <ion-select-option value="Indisponível">Indisponível</ion-select-option>
+             </ion-select>
+           </ion-item>
+         </ion-col>
+        </ion-row>
+        <ion-row>
+         <ion-col>
+           <ion-item>
+             <ion-label color="primary" class="label-input" position="stacked">Espaço</ion-label>
+             <ion-select id="espaco" name="espaco" formControlName="espaco" [interfaceOptions]="customActionSheetOptions" interface="action-sheet" placeholder="Selecione">
+               <ion-select-option value="" selected></ion-select-option>
+               <ion-select-option value="Terreo">Terreo</ion-select-option>
+               <ion-select-option value="1 Andar">1 Andar</ion-select-option>
+               <ion-select-option value="2 Andar">2 Andar</ion-select-option>
+             </ion-select>
+           </ion-item>
+         </ion-col>
+        </ion-row>
+        <ion-row>
+         <ion-col>
+           <ion-item>
+             <ion-label color="primary" class="label-input" position="stacked">Localização</ion-label>
+             <ion-select id="localizacao" name="localizacao" formControlName="localizacao" [interfaceOptions]="customActionSheetOptions" interface="action-sheet" placeholder="Selecione">
+               <ion-select-option value=""></ion-select-option>
+               <ion-select-option value="Sao Paulo">São Paulo</ion-select-option>
+               <ion-select-option value="Rio de Janeiro">Rio de Janeiro</ion-select-option>
+               <ion-select-option value="Brasília - Sede">Brasília - Sede</ion-select-option>
+               <ion-select-option value="Brasília - Regional">Brasília - Regional</ion-select-option>
+             </ion-select>
+           </ion-item>
+         </ion-col>
+          </ion-row>
+        <ion-row>
+         <ion-col>
+           <ion-item>
+             <ion-label color="primary" class="label-input" position="stacked">Descrição</ion-label>
+             <ion-input name="descricao" formControlName="descricao" class="input" type="text">{{Sala?.descricao}}</ion-input>
+           </ion-item>
+         </ion-col>
+        </ion-row>
+      </ion-list>
+      <ion-row class="align-items-center">
+       <ion-col>
+         <ion-button strong size="small" (click)="editarSala()" type="submit">Aplicar</ion-button>
+         <ion-button
+         strong
+         size="small"
+         (click)="locationBack()"
+         color="button-secondary"
+         type="button"
+         >Cancelar</ion-button>
+       </ion-col>
+      </ion-row>
+      
+    </form>
+  </ion-grid>
+</ion-content>

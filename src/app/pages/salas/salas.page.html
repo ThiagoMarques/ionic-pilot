@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start"> <ion-menu-button></ion-menu-button> </ion-buttons>
+    <ion-title text-center> Listagem Salas </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-list>
+      <ion-row>
+        <ion-item-sliding ion-item *ngFor="let sala of Sala" (click)="detalheSala(sala.id)">
+          <ion-item>
+            <ion-avatar slot="start"> <img src="../assets/icon/room.png" /> </ion-avatar>
+            <ion-label>
+              <ion-text class="list-title">{{sala.nome}}</ion-text>
+              <p>{{sala.espaco}} / {{sala.localizacao}}</p>
+              <p>{{sala.descricao}}</p>
+              <ion-badge color="success" *ngIf="sala.status == 'Disponível'">{{sala.status}}</ion-badge>
+              <ion-badge color="danger" *ngIf="sala.status == 'Indisponível'">{{sala.status}}</ion-badge>
+            </ion-label>
+          </ion-item>
+          <ion-item-options side="end">
+           <ion-item-option color="danger" (click)="deletarSala(sala.id)">Excluir</ion-item-option>
+         </ion-item-options>
+        </ion-item-sliding>
+      </ion-row>
+    </ion-list>
+    <ion-row class="ion-justify-content-end" edge>
+     <ion-col size="2">
+      <ion-fab horizontal="end" vertical="bottom">
+        <ion-fab-button (click)="addSala()" >
+          <ion-icon name="add"></ion-icon>
+        </ion-fab-button>
+     </ion-fab>
+     </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
