@@ -21,7 +21,7 @@
     "@angular/platform-browser-dynamic": "~8.1.2",
     "@angular/router": "~8.1.2",
     "@capacitor/android": "^1.1.1",
-    "@capacitor/cli": "^1.1.1",
+    "@capacitor/cli": "^1.5.3",
     "@capacitor/core": "^1.1.1",
     "@fortawesome/angular-fontawesome": "^0.5.0",
     "@fortawesome/fontawesome-svg-core": "^1.2.21",
